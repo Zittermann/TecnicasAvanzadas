@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../static/style.css">
+    <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Chatroom</title>
+    
+  </head>
+  <body>
+
+    <div class="container content">
+        <div class="row">
+            <div class="col-md-6 offset-3">
+                <div class="card">
+                    <div class="card-header">Chat</div>
+                    <div class="card-body height3">
+                        <ul class="chat-list">
+                            <li class="in">
+                                <div class="chat-img">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+                                </div>
+                                <div class="chat-body">
+                                    <div class="chat-message" style="display: flex; flex-direction: column">
+                                        <h5>Jimmy Williams</h5>
+                                        <p>Raw denin heard of them tufu master cleans</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="out">
+                                <div class="chat-img">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="">
+                                </div>
+                                <div class="chat-body">
+                                    <div id="chat" class="chat-message" style="display: flex; flex-direction: column">
+                                        <h5>Serena</h5>
+                                        <p>Welcome to this shit</p>
+                                    </div>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="width: 100%; display: flex">
+                    <input type="text" style="width: 100%" id="input">
+                    <button id="enviar">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <!-- socket.io -->
+    <script src="https://cdn.socket.io/4.3.2/socket.io.min.js" integrity="sha384-KAZ4DtjNhLChOB/hxXuKqhMLYvx3b5MlT55xPEiNmREKRzeEm+RVPlTnAn0ajQNs" crossorigin="anonymous"></script>
+
+
+    <script>
+        const username=`{{ username }}`
+    </script>
+    <script src="{{ url_for('static', filename='socket.js') }}" type="text/javascript"></script>
+  </body>
+</html>
