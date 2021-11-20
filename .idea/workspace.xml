@@ -2,28 +2,101 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c950a9e-5164-46f1-a7fe-468944e3e809" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/socket.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/socket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+    </list>
+    <list id="8eb5f952-ae58-4fbb-88de-43b774620031" name="Changes by tomas" comment="">
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/socket.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/socket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chatroom.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chatroom.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/app.py">
+      <ranges>
+        <range start1="3" end1="4" start2="3" end2="4" changelist="2c950a9e-5164-46f1-a7fe-468944e3e809" />
+        <range start1="18" end1="19" start2="18" end2="18" changelist="2c950a9e-5164-46f1-a7fe-468944e3e809" />
+        <range start1="31" end1="32" start2="30" end2="31" changelist="8eb5f952-ae58-4fbb-88de-43b774620031" />
+        <range start1="53" end1="54" start2="52" end2="53" changelist="2c950a9e-5164-46f1-a7fe-468944e3e809" />
+        <range start1="75" end1="75" start2="74" end2="75" changelist="2c950a9e-5164-46f1-a7fe-468944e3e809" />
+        <range start1="76" end1="76" start2="76" end2="79" changelist="2c950a9e-5164-46f1-a7fe-468944e3e809" />
+        <range start1="85" end1="87" start2="88" end2="91" changelist="2c950a9e-5164-46f1-a7fe-468944e3e809" />
+        <range start1="89" end1="91" start2="93" end2="95" changelist="2c950a9e-5164-46f1-a7fe-468944e3e809" />
+        <range start1="93" end1="94" start2="97" end2="105" changelist="2c950a9e-5164-46f1-a7fe-468944e3e809" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/static/socket.js">
+      <ranges>
+        <range start1="1" end1="1" start2="1" end2="2" changelist="2c950a9e-5164-46f1-a7fe-468944e3e809" />
+        <range start1="2" end1="4" start2="3" end2="6" changelist="2c950a9e-5164-46f1-a7fe-468944e3e809" />
+        <range start1="6" end1="8" start2="8" end2="10" changelist="2c950a9e-5164-46f1-a7fe-468944e3e809" />
+        <range start1="11" end1="12" start2="13" end2="17" changelist="2c950a9e-5164-46f1-a7fe-468944e3e809" />
+        <range start1="15" end1="15" start2="20" end2="28" changelist="2c950a9e-5164-46f1-a7fe-468944e3e809" />
+        <range start1="23" end1="24" start2="36" end2="37" changelist="8eb5f952-ae58-4fbb-88de-43b774620031" />
+        <range start1="31" end1="31" start2="44" end2="48" changelist="2c950a9e-5164-46f1-a7fe-468944e3e809" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProjectId" id="20hoY5n4wnAjrehJpP3fn4hmPA6" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/models" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.app">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TecnicasAvanzadas" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="TecnicasAvanzadas" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -46,6 +119,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.app" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -56,7 +134,10 @@
       <option name="presentableId" value="Default" />
       <updated>1636506226249</updated>
       <workItem from="1636506229762" duration="6000" />
-      <workItem from="1636506255579" duration="825000" />
+      <workItem from="1636506255579" duration="1057000" />
+      <workItem from="1636507328054" duration="9077000" />
+      <workItem from="1636516654642" duration="2736000" />
+      <workItem from="1637434893345" duration="3403000" />
     </task>
     <servers />
   </component>
@@ -73,6 +154,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -84,5 +166,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TecnicasAvanzadas$app.coverage" NAME="app Coverage Results" MODIFIED="1636517167505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TecnicasAvanzadas$main.coverage" NAME="main Coverage Results" MODIFIED="1636517152889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

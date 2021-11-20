@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h1>Lista de salas</h1>
+
+    <ul>
+        {% for sala in salas %}
+            <a href="#">
+                {{sala.room_name}}
+            </a>
+            <br>
+        {% endfor %}
+    </ul>
+    <script>
+        const salas = document.getElementsByTagName("li");
+
+        [...salas].forEach(e => {
+            e.addEventListener("click", () => {
+
+                console.log(e.innerHTML);
+
+                window.localStorage.setItem('room', e.innerHTML);
+
+                entrarSala(window.localStorage.getItem('room'));
+                console.log(window.localStorage.getItem('room'));
+                window.location.replace('http://127.0.0.1:5000/chatroom');
+            });
+        });
+    </script>
+
+</body>
+</html>

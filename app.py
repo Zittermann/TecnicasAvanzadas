@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 from flask_login import LoginManager, login_user, login_required, current_user
 from forms import UserForm
-from models import Users
+from models import Users, Messages, Rooms
 from flask_socketio import send, emit, join_room, leave_room, SocketIO
 import json
 from flask_mongoengine import MongoEngine
@@ -16,7 +16,6 @@ app.config["MONGODB_SETTINGS"] = {
 socketio = SocketIO(app)
 db = MongoEngine(app)
 
-
 # Login Manager configuration
 login_manager = LoginManager()
 login_manager.init_app(app)
@@ -29,7 +28,7 @@ app.config['SECRET_KEY'] = 'very-complex-password'
 @app.route('/chatroom', methods=['GET', 'POST'])
 @login_required
 def index():
-    return render_template('chatroom.html', username=current_user.username)
+    return render_template('chatroom.html', username=current_user.username, salas=Rooms.objects)
 
 
 @login_manager.user_loader
@@ -51,7 +50,7 @@ def log_in():
             if userForm.password.data == user.password:
                 login_user(user)
 
-                return redirect(url_for('index'))
+                return redirect(url_for('mostrar_salas'))
 
     return render_template('login.html', form=userForm)
 
@@ -73,7 +72,11 @@ def sign_up():
 
 @socketio.on("message")
 def message(data):
+
     message_json = json.loads(data)
+    print(message_json)
+    # messageInfo = Messages(username=message_json["username"], data=message_json["data"])
+
     message = {
         "data": message_json["data"],
         "username": message_json["username"]
@@ -83,15 +86,23 @@ def message(data):
 
 @socketio.on("join")
 def join(data):
-    data_json = json.loads(data)
-    join_room(data_json["room"])
+
+    data_json = json.loads(data)  # Convierte el JSON a un dict de Python
+    join_room(data_json['room'])
 
     join_message = {
-        "data": "Has entrado al chat",
-        "username": "Usuario"
+        "username": data_json["username"],
+        "data": "HA ENTRADO A LA SALA"
     }
 
-    send(join_message, data_json["room"])
+    emit("alerta", join_message, room=data_json["room"])
+
+
+# @app.route("/salas", methods=["GET"])
+# @login_required
+# def mostrar_salas():
+
+  #  return render_template("salas.html", salas=Rooms.objects, username=current_user.username)
 
 
 if __name__ == '__main__':
